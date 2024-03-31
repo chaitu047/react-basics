@@ -2,15 +2,15 @@ import React from "react";
 import Home from './Home';
 import Detail from './Detail';
 import About from './About';
-import {Routes, Route} from 'react-router-dom';
+import {Routes, Route, Link} from 'react-router-dom';
 
 function HandleRoutes() {
     return(
         <>
         <ul>
-            <li><a href="/Home">Home</a></li>
-            <li><a href="/About">About</a></li>
-            <li><a href="/Detail">Detail</a></li>
+            <li><Link to="/Home">Home</Link></li>
+            <li><Link to="/About">About</Link></li>
+            <li><Link to="/Detail">Detail</Link></li>
         </ul>
         <Routes>
             <Route path="/Home" element={<Home />}></Route>
