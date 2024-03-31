@@ -16,12 +16,13 @@ function Products(){
         <ul>
             {products.map(item => {
                 let {id,pname} = item;
-                return <li><Link to={`/products/${id}`}>{pname}</Link></li>;
+                return <li><Link state={item} to={`/products/${id}`}>{pname}</Link></li>;
             })};
         </ul>
         <Outlet />
         </>
     )
+
 
 }
 
