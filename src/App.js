@@ -1,11 +1,20 @@
 import React from "react";
 import "./style.css";
+import Header from './components/Header';
+import Footer from './components/Footer';
+//import EventHandling from './components/EventHandling'
+//import StateManagement from "./components/StateManagement";
+import HandleRoutes from './components/HandleRoutes';
 
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <Header />
+      <HandleRoutes />
+      <Footer />
     </div>
   );
 }
+
+//   <StateManagement />
+//   <EventHandling />
