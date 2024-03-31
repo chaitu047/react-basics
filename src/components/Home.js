@@ -4,4 +4,4 @@ function Home(){
     return <p>Home</p>
 }
 
-export default HTMLModElement;
+export default Home;
