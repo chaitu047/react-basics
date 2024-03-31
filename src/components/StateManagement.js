@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import React,{ useCallback, useState } from "react";
 import Counter from "./Counter";
 import Flag from "./Flag";
 
@@ -10,8 +10,8 @@ export default function StateManagement() {
         <>
         <Counter value={cnt}/>
         <Flag value={flag}/>
-        <button onClick={()=>setCnt(prev => prev+1)}>Increment</button>
-        <button onClick={()=>setFlag(prev => !prev)}>ChangeFlag</button>
+        <button onClick={useCallback(()=>setCnt(prev => prev+1))}>Increment</button>
+        <button onClick={useCallback(()=>setFlag(prev => !prev))}>ChangeFlag</button>
         </>
     )
 }
