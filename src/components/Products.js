@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {Link, Outlet} from 'react-router-dom';
 
 function Products(){
@@ -16,7 +16,7 @@ function Products(){
         <ul>
             {products.map(item => {
                 let {id,pname} = item;
-                return (<li><Link to={`/products/${id}`}>{pname}</Link></li>)
+                return <li><Link to={`/products/${id+1}`}>{pname}</Link></li>;
             })};
         </ul>
         <Outlet />
