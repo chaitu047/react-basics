@@ -13,9 +13,9 @@ function HandleRoutes() {
             <li><a href="/Detail">Detail</a></li>
         </ul>
         <Routes>
-            <Route path="/Home" element={Home}></Route>
-            <Route path="/About" element={About}></Route>
-            <Route path="/Detail" element={Detail}></Route>
+            <Route path="/Home" element={<Home />}></Route>
+            <Route path="/About" element={<About />}></Route>
+            <Route path="/Detail" element={<Detail />}></Route>
         </Routes>
         </>
     )
