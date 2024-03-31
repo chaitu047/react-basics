@@ -1,5 +1,5 @@
 import React from "react";
-import {Routes, Route, Link} from 'react-router-dom';
+import {Routes, Route, Link, Outlet} from 'react-router-dom';
 
 function Products(){
 
@@ -11,6 +11,7 @@ function Products(){
             <li><Link to='/products/3'>Carrot</Link></li>
             <li><Link to='/products/4'>Dosakaya</Link></li>
         </ul>
+        <Outlet />
         </>
     )
 

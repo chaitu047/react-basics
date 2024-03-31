@@ -19,8 +19,9 @@ function HandleRoutes() {
             <Route path="/Home" element={<Home />}></Route>
             <Route path="/About" element={<About />}></Route>
             <Route path="/Detail" element={<Detail />}></Route>
-            <Route path="/Products" element={<Products />}></Route>
-            <Route path="/Products/:id" element={<ProductDetail />}></Route>
+            <Route path="/Products" element={<Products />}>
+                <Route path=":id" element={<ProductDetail />}></Route>
+            </Route>
         </Routes>
         </>
     )
