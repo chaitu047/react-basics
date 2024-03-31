@@ -8,8 +8,8 @@ function HandleRoutes() {
         <>
         <ul>
             <li><a href="/Home">Home</a></li>
-            <li><a href="/About">Home</a></li>
-            <li><a href="/Detail">Home</a></li>
+            <li><a href="/About">About</a></li>
+            <li><a href="/Detail">Detail</a></li>
         </ul>
          <Home />
          <About />
