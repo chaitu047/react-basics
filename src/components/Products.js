@@ -16,7 +16,7 @@ function Products(){
         <ul>
             {products.map(item => {
                 let {id,pname} = item;
-                return <li><Link to={`/products/${id+1}`}>{pname}</Link></li>;
+                return <li><Link to={`/products/${id}`}>{pname}</Link></li>;
             })};
         </ul>
         <Outlet />
