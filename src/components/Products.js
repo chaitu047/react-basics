@@ -3,13 +3,21 @@ import {Link, Outlet} from 'react-router-dom';
 
 function Products(){
 
+    let [products,setProducts] = useState([
+        {id:1,pname:"Apple"},
+        {id:2,pname:"Banana"},
+        {id:3,pname:"Carrot"},
+        {id:4,pname:"Dogfruit"},
+        {id:5,pname:"Elonmusk"},
+    ]);
+
     return (
         <>
         <ul>
-            <li><Link to='/products/1'>Apple</Link></li>
-            <li><Link to='/products/2'>Banana</Link></li>
-            <li><Link to='/products/3'>Carrot</Link></li>
-            <li><Link to='/products/4'>Dosakaya</Link></li>
+            {products.map(item => {
+                let {id,pname} = item;
+                return (<li><Link to={`/products/${id}`}>{pname}</Link></li>)
+            })};
         </ul>
         <Outlet />
         </>
