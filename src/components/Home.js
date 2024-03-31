@@ -1,5 +1,7 @@
 import React from "react";
 
-function Detail(){
+function Home(){
     return <p>Home</p>
 }
+
+export default HTMLModElement;

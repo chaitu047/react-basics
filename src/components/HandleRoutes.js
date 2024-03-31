@@ -14,3 +14,5 @@ function HandleRoutes() {
         </>
     )
 }
+
+export default HandleRoutes;
