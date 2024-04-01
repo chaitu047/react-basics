@@ -13,7 +13,7 @@ function Purchase(){
             <select>
 
                 {products.map((product,index) => {
-                    <option key={index} value={product.price}>{product.pname}</option>
+                   return <option key={index} value={product.price}>{product.pname}</option>
                 })}
                 
             </select>
