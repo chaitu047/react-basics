@@ -1,7 +1,12 @@
 function Cart(){
+    let cart = [];
     return (
         <div>
-            {'Cart component'}
+            <ul>
+                {cart.map((item,index)=>{
+                    return <li key={index}>{item.name}</li>
+                })}
+            </ul>
         </div>
     );
 }
